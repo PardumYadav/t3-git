@@ -15,5 +15,16 @@ public class StreamApi {
 
         System.out.println(result);
 
+       List<String> words = Arrays.asList("apple", "banana", "avocado", "lemon", "grape");
+
+        long count = words.stream()
+               .filter(word -> word.startsWith("a"))
+                .count();
+
+        System.out.println("Words starting with 'a': " + count);
+
+
+
+
             }
 }
