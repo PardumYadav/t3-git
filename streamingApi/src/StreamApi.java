@@ -2,7 +2,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class Main {
+public class StreamApi {
 
 
     public static void main(String[] args) {
@@ -12,6 +12,8 @@ public class Main {
 
                 List<Integer> result = numbers.stream()
                         .filter(n -> n % 2 == 0).collect(Collectors.toList());
+
+        System.out.println(result);
 
             }
 }
